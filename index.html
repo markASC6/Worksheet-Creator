@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <script src="problemCreator.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="pdfmake.min.js"></script>
+    <script src="vfs_fonts.js"></script>
+    <title>Make a Worksheet</title>
+</head>
+<body>
+    <div class="navBar">
+        <h1 id="logo">Make a Worksheet</h1>
+    </div>
+    <div class="main">
+
+        <h1 id="topic">PEMDAS Worksheet</h1>
+        <div class="operations">
+            <span class="aOp">
+                <input type="checkbox" class="opTypes" name="Addition" value="isAdd" checked>
+                <label for="Addition">Addition</label>
+            </span>
+            <span class="aOp">
+                <input type="checkbox" class="opTypes" name="Subtraction" value="isSub" checked>
+                <label for="Subtraction">Subtraction</label>
+            </span>
+            <span class="aOp">
+                <input type="checkbox" class="opTypes" name="Multiplication" value="isMult" checked>
+                <label for="Multiplication">Multiplication</label>
+            </span>
+            <br>
+            <span class="aOp">
+                <input type="checkbox" class="opTypes" name="Division" value="isDiv" checked>
+                <label for="Division">Division</label>
+            </span>
+            <span class="aOp">
+                <input type="checkbox" class="opTypes" name="Exponents" value="isEx">
+            <label for="Exponents">Exponents</label>
+            </span>
+            <span class="aOp">
+                <input type="checkbox" class="opTypes" name="Parentheses" value="isParenth">
+                <label for="Parentheses">Parentheses</label>
+            </span>
+        </div>
+
+        <h1 class="opTitle">Addition and Subtraction</h1>
+        <div class="opSpecs">
+            <span>Numbers</span>
+            <input id="addMin" value="0">
+            <span>to</span>
+            <input id="addMax" value="25">
+        </div>
+        <h1 class="opTitle">Multiplication and Division</h1>
+        <div class="opSpecs">
+            <span>Numbers</span>
+            <input id="multMin" value="1">
+            <span>to</span>
+            <input id="multMax" value="12">
+        </div>
+        <h1 class="opTitle">Number of Operations</h1>
+        <div class="numOps">
+            <span class="aOp">
+                <input type="radio" class="opNumOptions" name="numOptions" value="isOneOp">
+                <label for="One">1.</label>
+                <span class="fadedText">(7 + 5)</span>
+            </span>
+            <span class="aOp">
+                <input type="radio" class="opNumOptions" name="numOptions" value="isTwoOp" checked>
+                <label for="Two">2.</label>
+                <span class="fadedText">(3 x 7 - 9)</span>
+            </span>
+            <span class="aOp">
+                <input type="radio" class="opNumOptions" name="numOptions" value="isThreeOp">
+                <label for="Three">3.</label>
+                <span class="fadedText">(4 x 12 ÷ 6 + 4)</span>
+            </span>
+        </div>
+        <div class="makePDF">
+            <button id="create" type ="button">Create Worksheet</button>
+        </div>
+    </div>
+</body>
+</html>

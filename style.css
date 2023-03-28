@@ -1,0 +1,76 @@
+html{
+    margin: 0;
+}
+
+body{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0;
+    background-color: #F3F8F2;
+}
+
+.navBar{
+    width: 100%;
+    background-color: #3581B8;
+    font-size: 20px;
+    color: #F3F8F2;
+
+    padding: 10px
+}
+
+#logo{
+    margin: 0;
+}
+
+.main{
+    margin: 0px 12% 0px;
+}
+
+#topic{
+    text-align: center;
+    color: #F59656;
+    font-size: 45px;
+    margin: 20px;
+}
+
+.operations{
+    margin-bottom: 40px;
+}
+
+.aOp{
+    font-size: 25px;
+    margin-right: 15%;
+    margin-bottom: 50px;
+}
+
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+}
+
+input[type=radio]{
+    width: 18px;
+    height: 18px;
+}
+
+.opTitle{
+    color: #F59656;
+    font-size: 35px;
+}
+
+.makePDF{
+    margin: 30px;
+    text-align: center;
+}
+
+#create{
+    background-color: #F59656;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+
+    font-size: 30px;
+}
+
+.fadedText{
+    color: gray;
+}
